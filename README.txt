@@ -16,4 +16,4 @@ A beadandó alapját a Teams-en található alap képezte, az implementált vál
 # Plant.jsx
 * Különálló div-eket hoz létre minden növénynek, ami tartalmazza a címüket, a képet róluk, illetve a checkbox-ot, amivel grayscale-re lehet állítani a képeket
 * A handlechange nevű metódus figyeli a checkbox-on történő változásokat, ami alapján a szürkeárnyalatos be és ki lehet kapcsolni
-![screenshot](https://imgur.com/oF3wLS4)
+![screenshot](https://i.imgur.com/oF3wLS4.png)
