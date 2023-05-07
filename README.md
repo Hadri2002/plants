@@ -15,6 +15,7 @@ A beadandó alapját a Teams-en található alap képezte, az implementált vál
 
 # Plant.jsx
 * Különálló div-eket hoz létre minden növénynek, ami tartalmazza a címüket, a képet róluk, illetve a checkbox-ot, amivel grayscale-re lehet állítani a képeket
-* A handlechange nevű metódus figyeli a checkbox-on történő változásokat, ami alapján a szürkeárnyalatos be és ki lehet kapcsolni
+* Ha a plant active tulajdonsága true, akkor automatikusan a grayscale effektus aktiválódik rajta
+* A handlechange nevű metódus figyeli a checkbox-on történő változásokat, ami alapján a szürkeárnyalatot be és ki lehet kapcsolni
 
-![image](https://user-images.githubusercontent.com/93373919/236671792-f6c41b52-08b1-4047-81a4-6f6fae391a20.png)
+![image](https://user-images.githubusercontent.com/93373919/236672554-e31a63f9-2456-4a18-9097-7020c1475a5a.png)
