@@ -1,10 +1,9 @@
 import Plant from "./Plant";
 
 const Plants = ({plants}) => {
-    console.log(plants)
   
     if (!plants) {
-      return <div>No plants to show...</div>
+      return <div>Nincsenek megjeleníthető növények...</div>
     }
   
     return (
