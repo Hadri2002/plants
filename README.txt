@@ -1,28 +1,19 @@
-Installálás nulláról:
+# Frontend keretrendszerek beadandó
 
-npm create vite@latest
-(egyeni/React/JavaScript)
+## Horváth Adrienn
 
-cd egyeni
-npm install
-npm install -D tailwindcss postcss autoprefixer
-npx tailwindcss init -p
+A beadandó alapját a Teams-en található alap képezte, az implementált változtatások a következők szerint alakultak
 
-tailwind.config.js:
-...
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
-...
+# App.jsx
+* Egyszerű fetch segítségével beolvassa a db.json nevű fájl tartalmát
+* Az így beolvasott adatokat átadja a Plants nevű konténernek
 
+# Plants.jsx
+* Feladata az összes növény tárolójának a kialakítása
+* Amennyiben nem kap adatokat, tájékoztatja róla a felhasználót
+* Ha kap adatokat (tehát sikeres volt az App.jsx-ben történő beolvasás) akkor meghívja a Plant konténer feltöltését
 
-src/main.css:
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-...
-
-npm run dev
-
+# Plant.jsx
+* Különálló div-eket hoz létre minden növénynek, ami tartalmazza a címüket, a képet róluk, illetve a checkbox-ot, amivel grayscale-re lehet állítani a képeket
+* A handlechange nevű metódus figyeli a checkbox-on történő változásokat, ami alapján a szürkeárnyalatos be és ki lehet kapcsolni
+![screenshot](https://imgur.com/oF3wLS4)
