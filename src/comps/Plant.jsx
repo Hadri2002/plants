@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 const Plant = ({plant}) => {
 
-    const [checked, setChecked] = useState(false); 
+    const [checked, setChecked] = useState(plant.active); 
     const handleChange = () => { 
       setChecked(!checked); 
     }; 
@@ -16,7 +16,7 @@ const Plant = ({plant}) => {
             </div>
 
             <div className="mt-2">
-                <input type="checkbox" value="" id="checkboxDefault" onChange={handleChange}/>
+                <input type="checkbox" value="" id="checkboxDefault" checked={checked} onChange={handleChange}/>
                 <label className="inline-block pl-2 hover:cursor-pointer"> Szürkeárnyalatos </label>
           </div>
     </div>)
